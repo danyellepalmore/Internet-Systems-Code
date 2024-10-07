@@ -1,7 +1,8 @@
 function getInput(){
   var firstName = document.forms["test"]["firstname"].value;
+  var lastName = document.forms["test"]["lastname"].value;
   
-  var outputText = "First name: " + firstName;
+  var outputText = "First name: " + firstName + "<br>Last name: "+lastName;
   
   document.getElementById("output").innerHTML = outputText;
 }
