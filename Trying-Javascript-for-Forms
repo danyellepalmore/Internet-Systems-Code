@@ -1,0 +1,7 @@
+function getInput(){
+  var firstName = document.forms["test"]["firstname"].value;
+  
+  var outputText = "First name: " + firstName;
+  
+  document.getElementById("output").innerHTML = outputText;
+}
