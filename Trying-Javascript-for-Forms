@@ -1,4 +1,5 @@
 function getInput(){
+<--test is the name of the form in html document-->
   var firstName = document.forms["test"]["firstname"].value;
   var lastName = document.forms["test"]["lastname"].value;
   
