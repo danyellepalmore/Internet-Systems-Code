@@ -38,10 +38,23 @@
         <label for = "gender"> Gender: </label>
         <input type = "radio" Gender = "gender">
         <br>
-      <!--Age Group-->
+      <!--Age Group:EDIT-->
       <br>
         <label for = "agegroup"> Age Group: </label>
         <input type = "radio" Gender = "gender">
+        <br>
+      <!--Music Genre-->
+      <br>
+        <label for = "musicgenre"> Music Genre: </label>
+        <input type = "checkbox" musicGenre = "musicgenre">
+        <br>
+      <!--Submit-->
+      <br>
+        <input type = "button" value = "submit" onclick="getFieldNames()">
+        <br>
+        <div id = "output"></div>
+      <!--Clear-->
+        <input type = "reset" value = "clear">
         <br>
       </form>
       <p id="currentTime"></p>
