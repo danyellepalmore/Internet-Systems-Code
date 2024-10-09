@@ -8,17 +8,40 @@
       <h1 class="title">Hello World! </h1>
       <form name ="validation">
       <!--Username-->
-        <label for = "fname">Username:</label>
-        <input type = "text" Username = "username">
+        <label for = "username">Username: </label>
+        <input type = "text" name = "username" size = "4" maxlength = "12">
         <br>
+        
       <!--Email-->
+      <br>
+        <label for = "email">Email: </label>
         <input type = "text" Email = "email">
         <br>
+        
       <!--Phone Number-->
+      <br>
+        <label for = "phonenumber">Phone Number: </label>
         <input type = "text" phoneNumber = "phonenumber">
         <br>
       <!--Password-->
-        <input type = "text" Password = "password">
+      <br>
+        <label for = "password">Password: </label>
+        <input type = "password" name = "mainpassword" size = "8">
+        <br>
+      <!--Confirm Password-->
+      <br>
+        <label for = "confirmpassword">Confirm Password: </label>
+        <input type = "password" confirmPassword = "confirmpassword">
+        <br>
+      <!--Gender-->
+      <br>
+        <label for = "gender"> Gender: </label>
+        <input type = "radio" Gender = "gender">
+        <br>
+      <!--Age Group-->
+      <br>
+        <label for = "agegroup"> Age Group: </label>
+        <input type = "radio" Gender = "gender">
         <br>
       </form>
       <p id="currentTime"></p>
