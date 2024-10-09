@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-      <h1 class="title">Hello World! </h1>
+<h1 class="title">Hello World! </h1>
       <form name = "test">
         First name: <br>
         <input type="text" name = "firstname">
@@ -13,17 +13,38 @@
         Last name: <br>
         <input type ="text" name = "lastname">
         <br><br>
-        <input type ="button" value = "Submit" onclick="getInput()">
+        <p>running get input 2 function from script.js</p>
+        <input type ="button" value = "Submit" onclick="getInputTwo()">
         <div id="output"></div>
         
       </form>
       <h1>Second Form</h1>
       <form action = "/action_page.php">
         <label for = "fname">First Name:</label><br>
-        <input type = "text" id="fname" name="fname" value="John"><br>
+        <p>radio</p>
+        <input type = "radio" id="fname" name="fname" value="John"><br>
+       <p>checkbox</p>
+        <input type = "checkbox" id="fname" name="fname" value="John"><br>
         <label for="lname">Last Name:</label><br>
-        <input type = "text" id="lname" name="lname" value="Doe"><br><br>
+        <p>press a button</p>
+        <input type = "button" id="lname" name="lname" value="Doe"><br><br>
+        <p>Submit the form</p>
         <input type="submit" value="Submit">
+      </form>
+        
+      <form name ="testTextArea">
+      <h1>Third Form</h1>
+        <p>Please give you feedback below: <br>
+         <!--cols and rows are just size of text box-->
+        <textarea name = "comments" cols = "20" rows="4"> Enter your feedback...</textarea>
+        </p>
+        <p>
+          This is your feedback?<br> <textarea name = "outputcomments" rows = "10" cols = "10">
+            Do these words appear
+          </textarea> <br><br>
+          <input type = "button" value="Go!" onclick="fun();"
+        </p>
+       
       </form>
       <p>with this code the form data is sent to "/action_page.php"</p>
       <script src="script.js"></script>
