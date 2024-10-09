@@ -1,5 +1,5 @@
-function getInput(){
-<--test is the name of the form in html document-->
+function getInputOne(){
+// <--test is the name of the form in html document-->
   var firstName = document.forms["test"]["firstname"].value;
   var lastName = document.forms["test"]["lastname"].value;
   
@@ -7,3 +7,15 @@ function getInput(){
   
   document.getElementById("output").innerHTML = outputText;
 }
+//displays input from name = lines
+function getInputTwo(){
+  document.getElementById("output").innerHTML = "Hello!"+document.test.firstname.value+ " "+ document.test.lastname.value;
+}
+
+function showTime() {
+	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+}
+showTime();
+setInterval(function () {
+	showTime();
+}, 1000);
