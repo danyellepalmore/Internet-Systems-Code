@@ -6,6 +6,8 @@ function getFieldNames(){
 function showTime() {
 	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
 }
+// username: [0-9a-z]
+//phone number: /(\d{3})-\d{3}-\d{4}
 showTime();
 setInterval(function () {
 	showTime();
