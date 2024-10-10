@@ -3,6 +3,20 @@ function getFieldNames(){
    document.getElementById("output").innerHTML = "Please Enter "+document.validation.username.value;
 }
 
+function checkUsername(){
+  const usernameInput = document.getElementById("username").value;
+  // /^ : start of input
+  // $: end of string
+  const pattern = /^[a-z0-9]$;
+  if (pattern.test(usernameInput)){
+    console.log('valid Username');
+    return true;
+  } else{
+    console.log('invalid username');
+    return false;
+  }
+}
+
 function showTime() {
 	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
 }
