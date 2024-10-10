@@ -21,7 +21,7 @@
       <!--Phone Number-->
       <br>
         <label for = "phonenumber">Phone Number: </label>
-        <input type = "text" phoneNumber = "phonenumber">
+        <input type = "text" phoneNumber = "phonenumber" size="10" maxlength="10">
         <br>
       <!--Password-->
       <br>
@@ -36,17 +36,31 @@
       <!--Gender-->
       <br>
         <label for = "gender"> Gender: </label>
-        <input type = "radio" Gender = "gender">
+        <input type = "radio" name = "gender" value = "Male"> Male
+        <input type = "radio" name = "gender" value = "Female"> Female
+        <input type = "radio" name = "gender" value = "Other"> Other
         <br>
       <!--Age Group:EDIT-->
       <br>
         <label for = "agegroup"> Age Group: </label>
-        <input type = "radio" Gender = "gender">
+        <select name = "ages" id="ages">
+          <option value="blank"> </option>
+          <option value="21">< 21 years old</option>
+          <option value="25">21 - 25 years old</option>
+          <option value="26">26 - 35 years old</option>
+          <option value="36">36 - 50 years old</option>
+          <option value="50">< 50 years old</option>
+        </select>
         <br>
       <!--Music Genre-->
       <br>
         <label for = "musicgenre"> Music Genre: </label>
-        <input type = "checkbox" musicGenre = "musicgenre">
+        <input type = "checkbox" name = "musicgenre" value ="Pop">Pop
+        <input type = "checkbox" name = "musicgenre" value ="Hiphop">Hiphop
+        <input type = "checkbox" name = "musicgenre" value ="Jazz">Jazz
+        <input type = "checkbox" name = "musicgenre" value ="Rock">Rock
+        <input type = "checkbox" name = "musicgenre" value ="Classical Music">Classical Music
+        <input type = "checkbox" name = "musicgenre" value ="Country">Country
         <br>
       <!--Submit-->
       <br>
