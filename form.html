@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Form</title>
     <link rel="stylesheet" href="styles.css" />
+    <!--EDIT-->
+    <script src="script.js"></script>
   </head>
   <body>
-      <form name ="validation" id="form" >
+      <form id="form" >
 
       <!--Username-->
-        <label for = "username">Username: </label>
-        <input type = "text" id = "username" name = "username">
+        <label id="usernameLabel" for = "username">Username: </label>
+        <input type = "text" id = "username" name = "username" required>
         <br>
         
 
       <!--Email-->
       <br>
-        <label for = "email">Email: </label>
-        <input type = "text" Email = "email">
+        <label id="emailLabel" for = "email">Email: </label>
+        <input type = "text" id="email" name = "email">
         <br>
         
       <!--Phone Number-->
       <br>
-        <label for = "phonenumber">Phone Number: </label>
-        <input type = "text" phoneNumber = "phonenumber" size="10" maxlength="10">
+        <label id="phoneLabel" for = "phonenumber">Phone Number: </label>
+        <input type = "text" id = "email" name = "phonenumber" size="10" maxlength="10">
         <br>
+        
       <!--Password-->
       <br>
-        <label for = "password">Password: </label>
-        <input type = "password" id="password" name = "password">
+        <label id="passwordLabel" for = "password">Password: </label>
+        <input type = "password" id="password" name = "password" required>
         <br>
+        
       <!--Confirm Password-->
       <br>
-        <label for = "confirmpassword">Confirm Password: </label>
-        <input type = "password" confirmPassword = "confirmpassword">
+        <label id="confirmLabelPassword" for = "confirmpassword">Confirm Password: </label>
+        <input type = "password" id="confirmPassword" name = "confirmpassword" required>
         <br>
+        
       <!--Gender-->
       <br>
-        <label for = "gender"> Gender: </label>
-        <input type = "radio" name = "gender" value = "Male"> Male
-        <input type = "radio" name = "gender" value = "Female"> Female
-        <input type = "radio" name = "gender" value = "Other"> Other
+        <label> Gender: </label>
+        <input type = "radio" id="male" name = "gender" value = "Male"> Male
+        <input type = "radio" id="female" name = "gender" value = "Female"> Female
+        <input type = "radio" id="other" name = "gender" value = "Other"> Other
         <br>
       <!--Age Group-->
       <br>
         <label for = "agegroup"> Age Group: </label>
-        <select name = "ages" id="ages">
-          <option value="blank"> </option>
+        <select name = "ageGroup" id="ageGroup">
+          <option value=""> </option>
           <option value="21">< 21 years old</option>
           <option value="25">21 - 25 years old</option>
           <option value="26">26 - 35 years old</option>
@@ -54,22 +60,21 @@
         <br>
       <!--Music Genre-->
       <br>
-        <label for = "musicgenre"> Music Genre: </label>
-        <input type = "checkbox" name = "musicgenre" value ="Pop">Pop
-        <input type = "checkbox" name = "musicgenre" value ="Hiphop">Hiphop
-        <input type = "checkbox" name = "musicgenre" value ="Jazz">Jazz
-        <input type = "checkbox" name = "musicgenre" value ="Rock">Rock
-        <input type = "checkbox" name = "musicgenre" value ="Classical Music">Classical Music
-        <input type = "checkbox" name = "musicgenre" value ="Country">Country
+        <label> Music Genre: </label>
+        <input type = "checkbox" id="pop" name = "musicGenre" value ="Pop">Pop
+        <input type = "checkbox" id="hiphop" name = "musicGenre" value ="Hiphop">Hiphop
+        <input type = "checkbox" id="jazz" name = "musicGenre" value ="Jazz">Jazz
+        <input type = "checkbox" id="rock" name = "musicGenre" value ="Rock">Rock
+        <input type = "checkbox" id="classical" name = "musicGenre" value ="Classical Music">Classical Music
+        <input type = "checkbox" id="country" name = "musicGenre" value ="Country">Country
         <br>
       <!--Submit-->
       <br>
-        <button type = "button" onclick="handleSubmit()">Submit</button>
+        <button type = "submit">Submit</button>
         <span></span>
       <!--Clear-->
-        <input type = "reset" value = "Clear">
-        <br>
+        <button type = "reset" value = "Clear">
       </form>
-      <script src="script.js"></script>
+      
   </body>
 </html>
