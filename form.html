@@ -6,11 +6,10 @@
   </head>
   <body>
       <h1 class="title">Hello World! </h1>
-      <form name ="validation" onsubmit="return checkUsername()">
+      <form name ="validation" onsubmit="return validateForm()">
       <!--Username-->
         <label for = "username">Username: </label>
-<!--does pattern work?-->
-        <input type = "text" id = "username" name = "username" size = "4" maxlength = "12" pattern = "[a-z0-9]">
+        <input type = "text" id = "username" name = "username" size = "4" maxlength = "12">
         <br>
         
       <!--Email-->
@@ -27,12 +26,12 @@
       <!--Password-->
       <br>
         <label for = "password">Password: </label>
-        <input type = "password" name = "mainpassword" size = "8">
+        <input type = "password" id="password" name = "password" size = "8">
         <br>
       <!--Confirm Password-->
       <br>
         <label for = "confirmpassword">Confirm Password: </label>
-        <input type = "password" confirmPassword = "confirmpassword">
+        <input type = "password" confirmPassword = "confirmpassword" required="">
         <br>
       <!--Gender-->
       <br>
@@ -65,7 +64,7 @@
         <br>
       <!--Submit-->
       <br>
-        <input type = "button" value = "submit" onclick="getFieldNames()">
+        <input type = "submit" value = "submit" onclick="getFieldNames()">
         <br>
         <div id = "output"></div>
       <!--Clear-->
