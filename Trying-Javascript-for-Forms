@@ -12,6 +12,19 @@ function getInputTwo(){
   document.getElementById("output").innerHTML = "Hello!"+document.test.firstname.value+ " "+ document.test.lastname.value;
 }
 
+function fun(){
+  document.getElementById("anotherOutput").innerHTML = document.testTextArea.pwd.value + "<br>"+document.testTextArea.hidden.value;
+}
+
+function anotherFun(){
+  let items = document.forms[0].fruit;
+  let anotherdiv = "";
+  for(let i = 0; i<items.length;i++){
+    if(items[i].checked)
+      anotherdiv += items[i].value +"\n";
+  } document.getElementById("anotherdiv").innerText = anotherdiv_html;
+}
+
 function showTime() {
 	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
 }
