@@ -5,6 +5,50 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <form name= "selectoption">
+      <h1>Using select and option</h1>
+      <label for ="cars">Choose a car</label>
+      <select name="cars" id="cars">
+        <optgroup label="type of car">
+          <option value="volvo">Volvo</option>
+          <option value="audi">Audi</option>
+        </optgroup>
+        <optgroup label = "othercars">
+          <option value="buick">Buick</option>
+        </optgroup>
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
+      
+      <p>select a sport
+        <select name = "sport" size=1>
+          <option value = "football" selected> Football</option>
+          <option value = "basketball">basketball</option>
+        </select>
+      </p>
+      <p>select a season
+        <select name = "season" size=2 multiple>
+          <option value="spring">Spring</option>
+          <option value = "summer">summer</option>
+        </select>
+      </p>
+      <p>
+        <input type = "button" value = "go" onclick="anotherFun()"
+      </p>
+    </form>
+    
+    
+    
+    <form name = "checkboxtext">
+      <h1>texting checkboxes slide 31 Images slide 35</h1>
+      <input type = "checkbox" name = "fruit" value="apple">apple<br>
+      <input type = "checkbox" name = "fruit" value="banana">banana<br>
+      <input type = "button" onclick="anotherFun()" value="click">
+    </form>
+    
+    <div id="anotherdiv"></div>
+    
+    
 <h1 class="title">Hello World! </h1>
       <form name = "test">
         First name: <br>
@@ -34,6 +78,12 @@
         
       <form name ="testTextArea">
       <h1>Third Form</h1>
+        Enter password:
+        <input type="password" name="pwd">
+        <input type="hidden" name="hidden" value="cs">
+        <br><br>
+        <input type="button" value = "go" onclick="fun()">
+        <input type = "reset" value="Cancel"
         <p>Please give you feedback below: <br>
          <!--cols and rows are just size of text box-->
         <textarea name = "comments" cols = "20" rows="4"> Enter your feedback...</textarea>
@@ -43,6 +93,7 @@
             Do these words appear
           </textarea> <br><br>
           <input type = "button" value="Go!" onclick="fun();"
+          <div id="anotherOutput"></div>
         </p>
        
       </form>
