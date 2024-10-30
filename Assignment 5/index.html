@@ -1,0 +1,32 @@
+<!-- /*
+    Danyelle Palmore
+    COMP 322
+    10/31/2024
+    HTML document that defines icons and their features. Places initial text on screen.
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- script to import jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href = styles.css> <script src="scripts.js"></script>
+    <title>jQuery Events and Effects</title>
+</head>
+<body>
+    <!-- shows icons -->
+    <span id="iconSpan">
+        <img src="icons/pinterest.png" alt="Icon 1" data-url= "https://www.pinterest.com/" data-name="Pinterest">
+        <img src="icons/canva.png" alt="Icon 2" data-url= "https://www.canva.com/" data-name= "Canva">
+        <img src="icons/gmail.png" alt="Icon 3" data-url= "https://mail.google.com/mail" data-name="Gmail">
+        <img src="icons/netflix.png" alt="Icon 4" data-url= "https://www.netflix.com/" data-name= "Netflix">
+        <img src="icons/instagram.png" alt="Icon 5" data-url= "https://www.instagram.com/" data-name= "Instagram">
+        <img src="icons/youtube.png" alt="Icon 6" data-url= "https://www.youtube.com/" data-name= "Youtube">
+    </span>   
+    <!-- what is presented when webpage is first loaded -->
+    <div class="icon-name" id="iconNameIn">In:</div>
+    <div class="icon-name" id="iconNameOut">Out: </div>
+    <div class="icon-name" id="iconMouseMove">Mouse X: ,Y:  </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* 
+    Danyelle Palmore
+    COMP 322
+    10/31/2024
+    Inhabits styles for the icons and also function used with toggle
+ */
+#iconSpan img{
+    height: 100px; /* Set the height of the icons */
+    width: auto;
+}
+.enlarged {
+     transform: scale(1.2);  /*class to enlarge icon */
+}
